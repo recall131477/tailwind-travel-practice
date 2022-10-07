@@ -710,3 +710,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(32 34 37 / var(--tw-bg-opacity));
 }
+
+.group:hover .group-hover\:fill-primary {
+  fill: #FFD167;
+}
