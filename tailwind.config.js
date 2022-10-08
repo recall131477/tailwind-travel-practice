@@ -32,7 +32,10 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0px 1px 3px rgba(0,0,0,0.3)',
-      }
+      },
+      backgroundImage: {
+        'gradient-135deg': 'linear-gradient(135deg, var(--tw-gradient-stops))'
+      },
     },
   },
   plugins: [],
