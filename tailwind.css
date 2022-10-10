@@ -938,6 +938,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-\[60px\] {
   padding-bottom: 60px;
 }
@@ -1046,6 +1051,11 @@ video {
 .placeholder\:text-gray-100::placeholder {
   --tw-text-opacity: 1;
   color: rgb(185 187 190 / var(--tw-text-opacity));
+}
+
+.hover\:-translate-y-2:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-gray-400:hover {
