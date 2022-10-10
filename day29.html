@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <title>Taiwan NO.1 Tour</title>
+  </head>
+  <body class="bg-gray-300">
+    <style>
+      body {
+        font-family: "Roboto", "Noto Sans TC", sans-serif;
+      }
+    </style>
+    <header
+      class="fixed top-0 left-0 z-999 flex h-24 w-full items-center justify-between bg-gray-300 px-5 shadow-3xl"
+    >
+      <a href="day28.html">
+        <picture>
+          <source
+            srcset="./img/logo/taiwan-pc-logo.svg"
+            media="(min-width: 768px)"
+          />
+          <img src="./img/logo/taiwan-mobile-logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <button
+        type="button"
+        class="group relative flex items-center rounded-md bg-gray-200 px-7.5 py-4 duration-300 hover:bg-gray-400"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          class="fill-gray-100 duration-300 group-hover:fill-primary"
+        >
+          <g transform="translate(-1308 -35)">
+            <path
+              d="M108.7,397.552a4.079,4.079,0,0,0-1.45-.915,4.352,4.352,0,0,0-1.75-.337,3.759,3.759,0,0,0-1.75.433,4.446,4.446,0,0,0-1.45,1.107c-.1.144-.2.241-.3.385a2.68,2.68,0,0,0-.3-.385,5.428,5.428,0,0,0-1.45-1.107,4.456,4.456,0,0,0-1.75-.433,5.368,5.368,0,0,0-1.75.337,5.616,5.616,0,0,0-1.45.915,4.37,4.37,0,0,0-1.3,3.081,4.84,4.84,0,0,0,.35,1.685,5.37,5.37,0,0,0,.95,1.4c.4.385,6.15,5.393,6.7,5.585.55-.241,6.25-5.2,6.7-5.585a4.371,4.371,0,0,0,1.3-3.082,4.841,4.841,0,0,0-.35-1.685A4.669,4.669,0,0,0,108.7,397.552Z"
+              transform="translate(1214 -359.8)"
+            />
+          </g>
+        </svg>
+        <span class="ml-2 text-14px text-white">我的最愛</span>
+        <span
+          class="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-12px text-gray-300"
+          >3</span
+        >
+      </button>
+    </header>
+    <main class="mt-24">
+      <section class="p-5">
+        <ul class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+          <li>
+            <a
+              href="javascript:;"
+              class="flex h-[60px] items-center justify-center rounded-md bg-gray-400 md:h-[70px]"
+            >
+              <img
+                src="./img/icon/icon-attractions.svg"
+                alt="attractions-icon"
+                class="w-8 md:w-auto"
+              />
+              <span class="ml-2 text-14px text-white md:ml-2.5 md:text-16px"
+                >旅遊景點</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="group flex h-[60px] items-center justify-center rounded-md bg-gray-200 duration-300 hover:bg-gray-400 md:h-[70px]"
+            >
+              <img
+                src="./img/icon/icon-hostel.svg"
+                alt="hostel-icon"
+                class="w-8 grayscale duration-300 group-hover:grayscale-0 md:w-auto"
+              />
+              <span
+                class="ml-2 text-14px text-gray-100 duration-300 group-hover:text-white md:ml-2.5 md:text-16px"
+                >推薦旅宿
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="group flex h-[60px] items-center justify-center rounded-md bg-gray-200 duration-300 hover:bg-gray-400 md:h-[70px]"
+            >
+              <img
+                src="./img/icon/icon-food.svg"
+                alt="food-icon"
+                class="w-8 grayscale duration-300 group-hover:grayscale-0 md:w-auto"
+              />
+              <span
+                class="ml-2 text-14px text-gray-100 duration-300 group-hover:text-white md:ml-2.5 md:text-16px"
+                >美食饗宴</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:;"
+              class="group flex h-[60px] items-center justify-center rounded-md bg-gray-200 duration-300 hover:bg-gray-400 md:h-[70px]"
+            >
+              <img
+                src="./img/icon/icon-event.svg"
+                alt="event-icon"
+                class="w-8 grayscale duration-300 group-hover:grayscale-0 md:w-auto"
+              />
+              <span
+                class="ml-2 text-14px text-gray-100 duration-300 group-hover:text-white md:ml-2.5 md:text-16px"
+                >活動資訊</span
+              >
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="px-5">
+        <div class="relative">
+          <img
+            src="./img/banner/banner-mobile.svg"
+            alt="搜尋 banner 圖"
+            class="w-full md:hidden"
+          />
+          <img
+            src="./img/banner/banner-pad.svg"
+            alt="搜尋 banner 圖"
+            class="hidden w-full md:block lg:hidden"
+          />
+          <img
+            src="./img/banner/banner-pc.svg"
+            alt="搜尋 banner 圖"
+            class="hidden w-full lg:block"
+          />
+          <div
+            class="absolute top-10 left-1/2 w-full -translate-x-1/2 px-5 md:top-[60px] md:w-[300px] md:px-0 lg:top-1/2 lg:w-1/2 lg:-translate-y-1/2"
+          >
+            <h1
+              class="text-center text-32px font-medium text-white lg:text-40px"
+            >
+              <span class="text-primary">探索</span> 您想去的地方
+            </h1>
+            <div class="mt-5 grid grid-cols-1 gap-x-5 gap-y-4 lg:grid-cols-2">
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="搜尋關鍵字"
+                  class="w-full rounded-md px-4 py-3 outline-none placeholder:text-gray-100"
+                />
+                <button
+                  type="button"
+                  class="absolute top-1/2 right-2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg bg-gradient-135deg from-primary to-secondary"
+                >
+                  <img src="./img/icon/icon-search.svg" alt="search-icon" />
+                </button>
+              </div>
+              <div class="relative">
+                <select
+                  class="w-full appearance-none rounded-md px-4 py-3 text-gray-200 outline-none"
+                >
+                  <option value="不分縣市">不分縣市</option>
+                  <option value="臺北市">臺北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="桃園市">桃園市</option>
+                  <option value="台中市">台中市</option>
+                </select>
+                <img
+                  src="./img/icon/icon-arrow.svg"
+                  alt="arrow-icon"
+                  class="pointer-events-none absolute top-1/2 right-4 -translate-y-1/2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- day29 - 練習區塊開始 -->
+      <section class="px-5 pb-10 pt-5 lg:pb-[60px]">
+        <div class="flex items-center">
+          <a href="day28.html" class="mr-5">
+            <img src="./img/icon/icon-left-arrow.svg" alt="上一頁" />
+          </a>
+          <h3 class="text-white lg:text-20px">目前位置：旅遊景點</h3>
+          <img
+            src="./img/icon/icon-triangle.svg"
+            alt="triangle-icon"
+            class="mx-2.5 lg:mx-3"
+          />
+          <h3 class="text-primary lg:text-20px">帆船鼻大草原</h3>
+        </div>
+        <div class="mt-5 -ml-5 -mb-7.5 flex flex-wrap">
+          <div class="w-full pl-5 pb-7.5 lg:w-1/2">
+            <img
+              src="./img/bg/bg-landscape-1.png"
+              alt="風景圖"
+              class="h-full w-full rounded-[10px] object-cover"
+            />
+          </div>
+          <div class="w-full pl-5 pb-7.5 lg:w-1/2">
+            <div class="flex">
+              <div class="w-1 rounded-r bg-white"></div>
+              <h2 class="ml-3 text-24px text-white lg:ml-4 lg:text-32px">
+                帆船鼻大草原
+              </h2>
+            </div>
+            <p class="mt-5 font-light text-gray-100">
+              帆船鼻位於綠島東南角，有「綠島地毯」之稱，可由朝日溫泉售票口旁邊的小徑沿步道而上。由於地形突出，地勢又高出四周，屬東北季季風可長驅直入的衝風帶；再加上後天的放牧，遂形成低草原景觀。草原邊緣懸崖可以俯視朝日溫泉與海參坪，也是綠島居高臨下欣賞日出、月昇，沐浴海風的最佳景點之一，每年四、五月可觀賞到南十字星座丰采，每年春秋候更是賞鳥的極佳去處。
+            </p>
+            <div class="mt-7.5">
+              <div class="rounded-t-md bg-gray-200 px-5 py-6">
+                <ul class="grid grid-cols-1 gap-y-5 md:grid-cols-2">
+                  <li class="flex">
+                    <img
+                      src="./img/icon/icon-location.svg"
+                      alt="location-icon"
+                      class="h-6 w-6"
+                    />
+                    <p class="ml-2.5 font-light text-white">
+                      臺東縣951綠島鄉溫泉路167號
+                    </p>
+                  </li>
+                  <li class="flex">
+                    <img
+                      src="./img/icon/icon-time.svg"
+                      alt="time-icon"
+                      class="h-6 w-6"
+                    />
+                    <p class="ml-2.5 font-light text-white">全天候開放</p>
+                  </li>
+                  <li class="flex">
+                    <img
+                      src="./img/icon/icon-ticket.svg"
+                      alt="ticket-icon"
+                      class="h-6 w-6"
+                    />
+                    <p class="ml-2.5 font-light text-white">免費</p>
+                  </li>
+                  <li class="flex">
+                    <img
+                      src="./img/icon/icon-phone.svg"
+                      alt="phone-icon"
+                      class="h-6 w-6"
+                    />
+                    <p class="ml-2.5 font-light text-white">886-8-9672026</p>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="flex items-start rounded-b-md border-t border-white/20 bg-gray-200 px-5 py-6"
+              >
+                <img
+                  src="./img/icon/icon-remind.svg"
+                  alt="remind-icon"
+                  class="h-6 w-6"
+                />
+                <p class="ml-2.5 font-light text-primary">
+                  1、帆船鼻為凸出海岬，地勢極高且海風強勁，請注意不要靠懸崖太近，以策安全。2、愛護大自然生物，並請維護環境整潔。3、夏季日照與冬季寒風甚強，請預作防範。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="border-t border-white/20 px-5 py-10 lg:py-[60px]">
+        <div class="-ml-5 -mb-7.5 flex flex-row-reverse flex-wrap">
+          <div class="w-full pl-5 pb-7.5 lg:w-1/2">
+            <iframe
+              class="rounded-[10px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.4933870145683!2d121.5047493153496!3d22.63538593636664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346f8cc24837de4f%3A0xb6e596408b763f60!2z5biG6Ii56by75aSn6I2J5Y6f!5e0!3m2!1szh-TW!2stw!4v1665404459321!5m2!1szh-TW!2stw"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="w-full pl-5 pb-7.5 lg:w-1/2">
+            <div class="flex lg:flex-row-reverse">
+              <div
+                class="w-1 rounded-r bg-white lg:rounded-r-none lg:rounded-l"
+              ></div>
+              <h2
+                class="ml-3 text-24px text-white lg:ml-0 lg:mr-4 lg:text-32px"
+              >
+                交通方式
+              </h2>
+            </div>
+            <p class="mt-5 font-light text-gray-100 lg:text-right">
+              南下：於花蓮火車站前搭乘花蓮客運，往豐濱、靜浦或台東方向班車，在富岡漁港站下車後步行至富岡漁港，轉乘渡船前往綠島。北上：自台東火車站前搭乘台灣好行東部海岸線或鼎東客運海線班車，在富岡漁港站下車後步行至富岡漁港，轉乘渡船前往綠島。綠島：島上設有環島公車，搭乘公車至朝日溫泉下車，沿朝日溫泉售票口旁邊的小徑走進去(查詢電話：089-672510)。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="border-t border-white/20 px-5 py-10 lg:py-[60px]">
+        <div class="flex">
+          <div class="w-1 rounded-r bg-white"></div>
+          <h2 class="ml-3 text-24px text-white lg:ml-4 lg:text-32px">
+            更多旅遊景點
+          </h2>
+        </div>
+        <ul
+          class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <li class="relative">
+            <a
+              href="javascript:;"
+              class="group block h-full overflow-hidden rounded-[10px] bg-gray-200 duration-300 hover:ring hover:ring-primary"
+            >
+              <div class="h-[200px] overflow-hidden">
+                <img
+                  src="./img/bg/bg-landscape-2.png"
+                  alt="風景圖"
+                  class="h-full w-full object-cover duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-20px text-white">哈巴狗與睡美人岩</h3>
+                <p class="mt-3 font-light text-gray-100 line-clamp-3">
+                  睡美人岩與哈巴狗岩靜臥在海參坪上，是綠島最著名的景點之一，從小長城步道遠眺，可以見到睡美人靜靜地躺臥在海面上，白色的沙灘是她秀麗的長髮，而垂著長耳朵睡美人岩與哈巴狗岩靜臥在海參坪上，是綠島最著名的景點之一，從小長城步道遠眺，可以見到睡美人靜靜地躺臥在海面上，白色的沙灘是她秀麗的長髮，而垂著長耳朵
+                </p>
+                <div class="mt-6 flex flex-wrap gap-x-7.5 gap-y-3">
+                  <div class="flex items-start">
+                    <img
+                      src="./img/icon/icon-location.svg"
+                      alt="location-icon"
+                    />
+                    <span class="ml-2.5 font-light text-white">臺東縣</span>
+                  </div>
+                  <div class="flex items-start">
+                    <img src="./img/icon/icon-time.svg" alt="time-icon" />
+                    <span class="ml-2.5 font-light text-white">全天候開放</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button
+              type="button"
+              class="group absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="fill-gray-100 duration-300 group-hover:fill-primary"
+              >
+                <g transform="translate(-1308 -35)">
+                  <path
+                    d="M108.7,397.552a4.079,4.079,0,0,0-1.45-.915,4.352,4.352,0,0,0-1.75-.337,3.759,3.759,0,0,0-1.75.433,4.446,4.446,0,0,0-1.45,1.107c-.1.144-.2.241-.3.385a2.68,2.68,0,0,0-.3-.385,5.428,5.428,0,0,0-1.45-1.107,4.456,4.456,0,0,0-1.75-.433,5.368,5.368,0,0,0-1.75.337,5.616,5.616,0,0,0-1.45.915,4.37,4.37,0,0,0-1.3,3.081,4.84,4.84,0,0,0,.35,1.685,5.37,5.37,0,0,0,.95,1.4c.4.385,6.15,5.393,6.7,5.585.55-.241,6.25-5.2,6.7-5.585a4.371,4.371,0,0,0,1.3-3.082,4.841,4.841,0,0,0-.35-1.685A4.669,4.669,0,0,0,108.7,397.552Z"
+                    transform="translate(1214 -359.8)"
+                  />
+                </g>
+              </svg>
+            </button>
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:;"
+              class="group block h-full overflow-hidden rounded-[10px] bg-gray-200 duration-300 hover:ring hover:ring-primary"
+            >
+              <div class="h-[200px] overflow-hidden">
+                <img
+                  src="./img/bg/bg-landscape-3.png"
+                  alt="風景圖"
+                  class="h-full w-full object-cover duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-20px text-white">柴口浮潛區</h3>
+                <p class="mt-3 font-light text-gray-100 line-clamp-3">
+                  早期稱為柵口，後來更名為「柴口」，為綠島主要浮潛區之一。海岸地形以珊瑚裙礁為主體，是綠島僅有的兩處沙灘之一。
+                  此為初級潛水區，觀光局東管理處在此設置潛早期稱為柵口，後來更名為「柴口」，為綠島主要浮潛區之一。海岸地形以珊瑚裙礁為主體，是綠島僅有的兩處沙灘之一。
+                  此為初級潛水區，觀光局東管理處在此設置潛
+                </p>
+                <div class="mt-6 flex flex-wrap gap-x-7.5 gap-y-3">
+                  <div class="flex items-start">
+                    <img
+                      src="./img/icon/icon-location.svg"
+                      alt="location-icon"
+                    />
+                    <span class="ml-2.5 font-light text-white">臺東縣</span>
+                  </div>
+                  <div class="flex items-start">
+                    <img src="./img/icon/icon-time.svg" alt="time-icon" />
+                    <span class="ml-2.5 font-light text-white">全天候開放</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button
+              type="button"
+              class="group absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="fill-gray-100 duration-300 group-hover:fill-primary"
+              >
+                <g transform="translate(-1308 -35)">
+                  <path
+                    d="M108.7,397.552a4.079,4.079,0,0,0-1.45-.915,4.352,4.352,0,0,0-1.75-.337,3.759,3.759,0,0,0-1.75.433,4.446,4.446,0,0,0-1.45,1.107c-.1.144-.2.241-.3.385a2.68,2.68,0,0,0-.3-.385,5.428,5.428,0,0,0-1.45-1.107,4.456,4.456,0,0,0-1.75-.433,5.368,5.368,0,0,0-1.75.337,5.616,5.616,0,0,0-1.45.915,4.37,4.37,0,0,0-1.3,3.081,4.84,4.84,0,0,0,.35,1.685,5.37,5.37,0,0,0,.95,1.4c.4.385,6.15,5.393,6.7,5.585.55-.241,6.25-5.2,6.7-5.585a4.371,4.371,0,0,0,1.3-3.082,4.841,4.841,0,0,0-.35-1.685A4.669,4.669,0,0,0,108.7,397.552Z"
+                    transform="translate(1214 -359.8)"
+                  />
+                </g>
+              </svg>
+            </button>
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:;"
+              class="group block h-full overflow-hidden rounded-[10px] bg-gray-200 duration-300 hover:ring hover:ring-primary"
+            >
+              <div class="h-[200px] overflow-hidden">
+                <img
+                  src="./img/bg/bg-landscape-4.png"
+                  alt="風景圖"
+                  class="h-full w-full object-cover duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-20px text-white">馬公港 漁人碼頭</h3>
+                <p class="mt-3 font-light text-gray-100 line-clamp-3">
+                  馬公第二漁港延伸至馬公第一漁港是一條長長的木棧道，這裡就是漁人碼頭，早晚都有不少人悠閒散步著，在漁人碼頭中段的「菊島之星」，是一間船造型的漁產品直銷馬公第二漁港延伸至馬公第一漁港是一條長長的木棧道，這裡就是漁人碼頭，早晚都有不少人悠閒散步著，在漁人碼頭中段的「菊島之星」，是一間船造型的漁產品直銷
+                </p>
+                <div class="mt-6 flex flex-wrap gap-x-7.5 gap-y-3">
+                  <div class="flex items-start">
+                    <img
+                      src="./img/icon/icon-location.svg"
+                      alt="location-icon"
+                    />
+                    <span class="ml-2.5 font-light text-white">臺東縣</span>
+                  </div>
+                  <div class="flex items-start">
+                    <img src="./img/icon/icon-time.svg" alt="time-icon" />
+                    <span class="ml-2.5 font-light text-white">全天候開放</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button
+              type="button"
+              class="group absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="fill-gray-100 duration-300 group-hover:fill-primary"
+              >
+                <g transform="translate(-1308 -35)">
+                  <path
+                    d="M108.7,397.552a4.079,4.079,0,0,0-1.45-.915,4.352,4.352,0,0,0-1.75-.337,3.759,3.759,0,0,0-1.75.433,4.446,4.446,0,0,0-1.45,1.107c-.1.144-.2.241-.3.385a2.68,2.68,0,0,0-.3-.385,5.428,5.428,0,0,0-1.45-1.107,4.456,4.456,0,0,0-1.75-.433,5.368,5.368,0,0,0-1.75.337,5.616,5.616,0,0,0-1.45.915,4.37,4.37,0,0,0-1.3,3.081,4.84,4.84,0,0,0,.35,1.685,5.37,5.37,0,0,0,.95,1.4c.4.385,6.15,5.393,6.7,5.585.55-.241,6.25-5.2,6.7-5.585a4.371,4.371,0,0,0,1.3-3.082,4.841,4.841,0,0,0-.35-1.685A4.669,4.669,0,0,0,108.7,397.552Z"
+                    transform="translate(1214 -359.8)"
+                  />
+                </g>
+              </svg>
+            </button>
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:;"
+              class="group block h-full overflow-hidden rounded-[10px] bg-gray-200 duration-300 hover:ring hover:ring-primary"
+            >
+              <div class="h-[200px] overflow-hidden">
+                <img
+                  src="./img/bg/bg-landscape-5.png"
+                  alt="風景圖"
+                  class="h-full w-full object-cover duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-20px text-white">福正沙灘</h3>
+                <p class="mt-3 font-light text-gray-100 line-clamp-3">
+                  福正聚落前的美麗金黃沙灘
+                  順著福正聚落裡的小徑走向海邊，會發現一抹潔白正在海陸交界處，隨著海風浪潮流轉靜臥，那正是被村落圍繞的福正沙灘。這裡海水清澈見福正聚落前的美麗金黃沙灘
+                  順著福正聚落裡的小徑走向海邊，會發現一抹潔白正在海陸交界處，隨著海風浪潮流轉靜臥，那正是被村落圍繞的福正沙灘。這裡海水清澈見
+                </p>
+                <div class="mt-6 flex flex-wrap gap-x-7.5 gap-y-3">
+                  <div class="flex items-start">
+                    <img
+                      src="./img/icon/icon-location.svg"
+                      alt="location-icon"
+                    />
+                    <span class="ml-2.5 font-light text-white">臺東縣</span>
+                  </div>
+                  <div class="flex items-start">
+                    <img src="./img/icon/icon-time.svg" alt="time-icon" />
+                    <span class="ml-2.5 font-light text-white">全天候開放</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button
+              type="button"
+              class="group absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="fill-gray-100 duration-300 group-hover:fill-primary"
+              >
+                <g transform="translate(-1308 -35)">
+                  <path
+                    d="M108.7,397.552a4.079,4.079,0,0,0-1.45-.915,4.352,4.352,0,0,0-1.75-.337,3.759,3.759,0,0,0-1.75.433,4.446,4.446,0,0,0-1.45,1.107c-.1.144-.2.241-.3.385a2.68,2.68,0,0,0-.3-.385,5.428,5.428,0,0,0-1.45-1.107,4.456,4.456,0,0,0-1.75-.433,5.368,5.368,0,0,0-1.75.337,5.616,5.616,0,0,0-1.45.915,4.37,4.37,0,0,0-1.3,3.081,4.84,4.84,0,0,0,.35,1.685,5.37,5.37,0,0,0,.95,1.4c.4.385,6.15,5.393,6.7,5.585.55-.241,6.25-5.2,6.7-5.585a4.371,4.371,0,0,0,1.3-3.082,4.841,4.841,0,0,0-.35-1.685A4.669,4.669,0,0,0,108.7,397.552Z"
+                    transform="translate(1214 -359.8)"
+                  />
+                </g>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <!-- day29 - 練習區塊結束 -->
+    </main>
+    <footer class="bg-gray-400 py-10">
+      <ul class="flex justify-center gap-5">
+        <li>
+          <a href="javascript:;">
+            <img
+              src="./img/icon/icon-facebook.svg"
+              alt="facebook-icon"
+              class="duration-300 hover:-translate-y-2"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img
+              src="./img/icon/icon-line.svg"
+              alt="line-icon"
+              class="duration-300 hover:-translate-y-2"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img
+              src="./img/icon/icon-instagram.svg"
+              alt="instagram-icon"
+              class="duration-300 hover:-translate-y-2"
+            />
+          </a>
+        </li>
+      </ul>
+      <p class="mt-3 text-center text-gray-100">Taiwan NO.1 Travel</p>
+    </footer>
+  </body>
+</html>
